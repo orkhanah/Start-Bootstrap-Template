@@ -1,0 +1,409 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+ul, li{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    width: 100%;
+    height: 55px;
+    background-color: #212529;
+    position: fixed;
+    z-index: 1;
+}
+
+.leftPart a{
+    font-family: 'Kaushan Script', cursive;
+    color: #fec503;
+    font-size: 23px;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+.leftPart{
+    padding-left: 250px;
+    float: left;
+}
+
+.rightPart ul{
+    display: flex;
+    float: right;
+}
+
+.rightPart ul li{
+    color: rgb(243, 243, 243);
+    font-size: 15px;
+    line-height: 55px;
+    margin-right: 20px;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+}
+
+.rightPart{
+    padding-right: 280px;
+}
+
+.rightPart li{
+    transition: ease-in-out .4s all;
+}
+
+.rightPart li:hover{
+    color: #fed136;
+}
+
+.rightPart a{
+    text-decoration: none;
+}
+
+.header{
+    width: 100%;
+    height: 800px;
+    background-image: url(https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg);
+    background-size: cover;
+    position: relative;
+    
+}
+
+.headerText{
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 23%;
+}
+
+.headerText a{
+    background-color: #fed136;
+    border-color: #fed136;
+    color: white;
+    border-radius: 4px;
+    font-size: 18px;
+    padding: 22px 40px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 8;
+    transition: .2s;
+}
+
+.headerText a:hover{
+    background-color:#fec712 ;
+}
+
+#services{
+    padding: 100px 0;
+    height: 520px;
+}
+
+.offer{
+    text-align: center;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.offer h4, p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.offer h4{
+    font-size: 25px;
+}
+
+.offer p{
+    line-height: 25px;
+    color: rgb(92, 92, 92);
+}
+
+.offers{
+    position: absolute;
+    left:16%;
+    margin-top: 50px;
+}
+
+.servicesText{
+    text-align: center;
+}
+
+.ourServices{
+    position: relative;
+}
+
+#portfolio{
+    padding: 100px 0;
+    height: 950px;
+    background-color: #f8f9fa;
+}
+
+.portfolioText{
+    text-align: center;
+}
+
+.portfolioBox{
+    width: 350px;
+    height: 370px;
+    background-color: #fff;
+    display: inline-block;
+    margin: 15px 15px 15px 15px;
+}
+
+.description h4, p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.description h4{
+    font-size: 25px;
+    margin: 10px 0;
+    margin-bottom: 0;
+}
+
+.description p{
+    line-height: 25px;
+    color: rgb(92, 92, 92);
+    margin-top: 0;
+}
+
+.description{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.contentPortfolio{
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+
+.portfolios{
+    position: absolute;
+   left: 16%;
+   margin-top: 30px;
+}
+
+.image{
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+    background-color: #fed136;
+    opacity: 0;
+    transition: .5s;
+}
+
+.image:hover .overlay{
+    opacity: .91;
+}
+
+.image i{
+    position: absolute;
+    top: 39%;
+    left: 42%;
+    font-size: 59px;
+    color: white;
+    opacity: 0;
+    transition: .4s;
+}
+
+.image:hover i{
+    opacity: 1;
+}
+
+.teamText{
+    text-align: center;
+}
+
+.member img{
+    width: 225px;
+    height: 225px;
+    border: 7px solid rgba(0,0,0,.1);
+    border-radius: 100%;
+}
+
+.member h4{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.member p{
+    font-family: 'Roboto Slab', serif;
+    color: rgb(107, 107, 107);
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.member h4{
+    font-weight: 700;
+    font-size: 24px;
+    margin: 15px 0 0 0;
+}
+
+.member{
+    text-align: center;
+    float: left;
+    padding: 0 70px;
+}
+
+.socialMedia a{
+    font-size: 20px;
+    line-height: 50px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    transition: all .3s;
+    color: #fff;
+    border-radius: 100%;
+    outline: 0;
+    background-color: #212529;
+    float: left;
+    margin-left: 15px;
+    transition: .5s;
+}
+
+.socialMedia a:hover{
+    background-color: #fec503;
+}
+
+.socialMedia , .team , .contentTeam{
+    text-align: center;
+}
+
+.socialMedia {
+    padding-left: 10px;
+}
+
+.contentTeam{
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+.team{
+    position: absolute;
+    left: 15%;
+    top: 25%;
+}
+
+#ourTeam{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.member img{
+    cursor: pointer;
+}
+
+.descriptionTeam{
+    position: absolute;
+    bottom: 7%;
+    left: 30%;
+}
+
+.descriptionTeam p{
+    font-family: 'Roboto Slab', serif;
+    color: #6c757d;
+    font-size: 16px;
+}
+
+.adsContainer div{
+    display: inline-block;
+    margin-right: 60px;
+}
+
+#ads{
+    position: relative;
+    background-color: #f8f9fa;
+    height: 130px;
+}
+
+.adsContainer{
+    position: absolute;
+    left: 23%;
+    top: 30%;
+}
+
+.adsContainer div img{
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+
+.privacy a{
+    color: #ecb601;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footerContent p, .socialMedia, .privacy{
+    display: inline-block;
+}
+
+.footerContent{
+    position: relative;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#footer{
+    height: 50px;
+    padding-bottom: 50px;
+}
+
+.socialMedia1 a{
+    font-size: 20px;
+    line-height: 50px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    transition: all .3s;
+    color: #fff;
+    border-radius: 100%;
+    outline: 0;
+    background-color: #212529;
+    float: left;
+    margin-left: 15px;
+}
+
+.socialMedia1 a:hover{
+    background-color: #fec503;
+}
+
+.socialMedia1{
+    text-align: center;
+}
+
+.socialMedia1 {
+    padding-left: 10px;
+}
+
+.footerText, .socialMedia1, .privacy{
+    display: inline-block;
+    position: absolute;
+}
+
+.footerText
+{
+    top: 50px;
+    left: 20%;
+}
+
+.socialMedia1{
+    left: 43%;
+}
+
+.privacy{
+    top: 50px;
+    right: 20%;
+}
